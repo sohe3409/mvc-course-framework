@@ -23,7 +23,7 @@ class GameController extends Controller
         session(['compScore' => 0]);
 
         return view('game', [
-            'game' => $message ?? "Hello World as default from within controller"
+            'message' => "Choose one or two dices to play with!"
         ]);
     }
 
@@ -72,7 +72,7 @@ class GameController extends Controller
 
             $sum = ("Computer score: "  . $compScore);
 
-        } else if ($action === "Start over") {
+        } else if ($action === "End game") {
             $request->session()->flush();
             return view('message', [
                 'message' => "Play Game 21",
@@ -80,7 +80,7 @@ class GameController extends Controller
         }
 
         return view('diceGame', [
-            'message' => $message ?? "Play Game 21",
+            'message' => $message ?? "Game ended!",
             'sum' => $sum ?? "def",
             'compScore' => $compScore ?? "def"
         ]);

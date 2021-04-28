@@ -10,20 +10,6 @@ Route::get('/', function () {
 
 
 Route::get('/hello', [HelloWorldController::class, 'hello'])->name('hello');
-Route::get('/dice', [GameController::class, 'playGame'])->name('dice');
-Route::post('/dice', [GameController::class, 'startGame']);
 
-
-//
-// // Added for mos example code
-// Route::get('/hello-world', function () {
-//   echo "Hello World";
-// });
-// Route::get('/hello-world-view', function () {
-//   return view('message', [
-//     'message' => "Hello World from within a view"
-//   ]);
-// });
-// Route::get('/dice', function () {
-//   return view('game');
-// });
+Route::get('/game', [GameController::class, 'playGame'])->name('game');
+Route::post('/game', [GameController::class, 'startGame']);

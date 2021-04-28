@@ -27,29 +27,29 @@
 
 
 
-          <form action="{{ url('/dice') }}" method="post">
+          <form action="{{ url('/game') }}" method="post">
               @csrf
-              <input type="submit" name="action" value="Roll again">
+              <input class="button" type="submit" name="action" value="Roll again">
           </form>
           <br>
-          <form action="{{ url('/dice') }}" method="post">
+          <form action="{{ url('/game') }}" method="post">
               @csrf
               <input type="hidden" name="score" value="<?= $total ?>">
-              <input type="submit" name="action" value="Stop">
+              <input class="button" type="submit" name="action" value="Stop">
           </form>
           <br>
-          <form action="{{ url('/dice') }}" method="post">
+          <form action="{{ url('/game') }}" method="post">
               @csrf
-              <input type="submit" name="action" value="New round">
+              <input class="button" type="submit" name="action" value="New round">
           </form>
 
-          <h2>Rounds won:</h2>
+          <p>Rounds won:</p>
           <p>You: <?= session('user') ?></p>
           <p>Computer: <?= session('computer') ?></p>
 
-          <form action="{{ url('/dice') }}" method="post">
+          <form action="{{ url('/game') }}" method="post">
               @csrf
-              <input type="submit" name="action" value="Start over">
+              <input class="button" type="submit" name="action" value="End game">
           </form>
           <br>
 
