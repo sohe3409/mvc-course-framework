@@ -1,3 +1,4 @@
+
 BIN        := .bin
 VENDORBIN  := vendor/bin
 PHPLOC     := $(BIN)/phploc

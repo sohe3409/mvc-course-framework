@@ -31871,11 +31871,15 @@ h1 {
 }
 
 .container {
-  min-height: 600px;
+  height: 600px;
   width: 600px;
   border-radius: 20px;
   background-color: #fff;
   padding: 1em;
+}
+
+.result {
+  height: 130px;
 }
 
 .button {
@@ -31886,6 +31890,16 @@ h1 {
   margin: 0.5em;
   border-radius: 10px;
   font-size: 1.2rem;
+}
+
+@media (max-width: 668px) {
+  nav {
+    font-size: 1.2rem;
+  }
+
+  .container{
+    margin: 1em;
+  }
 }
 
 @media (min-width: 640px) {

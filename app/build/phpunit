@@ -1,25 +1,3 @@
 PHPUnit 9.5.4 by Sebastian Bergmann and contributors.
 
-.......EE.                                                        10 / 10 (100%)
-
-Time: 00:05.032, Memory: 36.00 MB
-
-There were 2 errors:
-
-1) App\Http\Controllers\ControllerGameTest::testCreateTheControllerClass
-PHPUnit\Framework\InvalidArgumentException: Argument #1 of PHPUnit\Framework\Assert::assertInstanceOf() must be a class or interface name
-
-C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\framework\app\tests\Unit\Controller\ControllerGameTest.php:30
-
-2) App\Http\Controllers\ControllerGameTest::testControllerProcessAction
-ArgumentCountError: Too few arguments to function App\Http\Controllers\GameController::startGame(), 0 passed in C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\framework\app\tests\Unit\Controller\ControllerGameTest.php on line 41 and exactly 1 expected
-
-C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\framework\app\app\Http\Controllers\GameController.php:30
-C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\framework\app\tests\Unit\Controller\ControllerGameTest.php:41
-
-ERRORS!
-Tests: 10, Assertions: 14, Errors: 2.
-
-Generating code coverage report in Clover XML format ... done [00:00.042]
-
-Generating code coverage report in HTML format ... done [00:00.589]
+..

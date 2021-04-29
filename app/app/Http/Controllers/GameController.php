@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
@@ -9,13 +10,8 @@ use App\Models\Dice\GraphicalDice;
 
 class GameController extends Controller
 {
-    /**
-     * Display a message.
-     *
-     * @param  string  $message
-     * @return \Illuminate\View\View
-     */
-    public function playGame($message=null)
+
+    public function playGame()
     {
         session(['user' => 0]);
         session(['computer' => 0]);
@@ -29,25 +25,26 @@ class GameController extends Controller
 
     public function startGame(Request $request)
     {
-        $action = $request->action;
+        $action = $request->input('action');
+        $message = "";
 
-        if ($action === "start") {
-            session(['dices' => $request->dices]);
+        if ($action === "Start!") {
+            session(['dices' => $request->input('dices')]);
             $hand = new DiceHand((int)session('dices'));
             $hand->roll();
             $sum = $hand->sum;
-        } else if ($action === "Roll again") {
+        } elseif ($action === "Roll again") {
             $hand = new DiceHand((int)session('dices'));
             $hand->roll();
             $sum = $hand->sum;
-        } else if ($action === "New round") {
+        } elseif ($action === "New round") {
             session(['score' => 0]);
             session(['compScore' => 0]);
             $hand = new DiceHand((int)session('dices'));
             $hand->roll();
             $sum = $hand->sum;
-        } else if ($action === "Stop") {
-            $score = $request->score;
+        } elseif ($action === "Stop") {
+            $score = $request->input('score');
             $compScore = $this->roll();
             $new = 0;
 
@@ -71,16 +68,15 @@ class GameController extends Controller
             }
 
             $sum = ("Computer score: "  . $compScore);
-
-        } else if ($action === "End game") {
+        } elseif ($action === "End game") {
             $request->session()->flush();
             return view('message', [
-                'message' => "Play Game 21",
+                'message' => "Game ended!",
             ]);
         }
 
         return view('diceGame', [
-            'message' => $message ?? "Game ended!",
+            'message' => $message,
             'sum' => $sum ?? "def",
             'compScore' => $compScore ?? "def"
         ]);

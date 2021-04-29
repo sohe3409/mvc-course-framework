@@ -11,7 +11,7 @@
                 <label for="dices">1</label>
                 <input type="radio" name="dices" value="2" required>
                 <label for="dices">2</label>
-                <input class="button" type="submit" name="action" value="start">
+                <input class="button" type="submit" name="action" value="Start!">
             </form>
 
         </div>

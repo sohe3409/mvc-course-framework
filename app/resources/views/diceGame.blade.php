@@ -21,10 +21,11 @@
           } else {
               $status = "Total score: " . $total;
           }?>
-
-          <p><?= $sum ?></p>
-          <p><?= $status ?></p>
-
+          <div class="result">
+              <p><?= $sum ?></p>
+              <p><?= $status ?></p>
+              <p><?= $message ?></p>
+          </div>
 
 
           <form action="{{ url('/game') }}" method="post">

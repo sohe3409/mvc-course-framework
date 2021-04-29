@@ -42,11 +42,15 @@ h1 {
 }
 
 .container {
-    min-height: 600px;
+    height: 600px;
     width: 600px;
     border-radius: 20px;
     background-color: #fff;
     padding: 1em;
+}
+
+.result {
+    height: 130px;
 }
 
 .button {
