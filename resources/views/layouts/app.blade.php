@@ -19,6 +19,9 @@
         <li>
           <a href="{{ route('game') }}">Game 21</a>
         </li>
+        <li>
+          <a href="{{ route('books') }}">Books</a>
+        </li>
       </ul>
     </nav>
     @yield('content')
