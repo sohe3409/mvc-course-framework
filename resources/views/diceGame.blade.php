@@ -53,8 +53,24 @@
               <input class="button" type="submit" name="action" value="End game">
           </form>
           <br>
-
-
+            <div class="book-img">
+                @php
+                $highscore = (session('user') - session('computer')) * 10;
+                @endphp
+                @if($highscore > 0)
+                    <br>
+                    <form action="{{ url('/highscores') }}" method="post">
+                        @csrf
+                        <label for="name">Your name: </label>
+                        <input type="text" id="name" name="name" minlength="3" maxlength="10" required>
+                        <input type="hidden" name="score" value="{{ $highscore }}">
+                        <input class="button" type="submit" name="action" value="Save score">
+                    </form>
+                @else
+                    <br>
+                    <p style="font-size: 1rem; color: blue">You must have won more rounds than the computer to save your score.</p>
+                @endif
+            </div>
         </div>
     </div>
 @endsection

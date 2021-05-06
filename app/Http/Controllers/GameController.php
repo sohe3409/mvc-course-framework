@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Highscores;
 use App\Models\Dice\Dice;
 use App\Models\Dice\DiceHand;
 use App\Models\Dice\GraphicalDice;
 
+
 class GameController extends Controller
 {
-
     public function playGame()
     {
         session(['user' => 0]);

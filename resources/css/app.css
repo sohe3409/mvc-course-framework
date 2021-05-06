@@ -59,6 +59,10 @@ h2 {
     height: 130px;
 }
 
+.input {
+    border: 1px solid #000;
+}
+
 .button {
     background-color: #d8bfd8;
     width: 7em;

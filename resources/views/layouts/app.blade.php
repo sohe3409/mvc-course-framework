@@ -11,16 +11,19 @@
     <nav>
       <ul>
         <li>
-          <a href="{{ route('index') }}">Home</a>
+            <a href="{{ route('index') }}">Home</a>
         </li>
         <li>
-          <a href="{{ route('hello') }}">Hello</a>
+            <a href="{{ route('hello') }}">Hello</a>
         </li>
         <li>
-          <a href="{{ route('game') }}">Game 21</a>
+            <a href="{{ route('books') }}">Books</a>
         </li>
         <li>
-          <a href="{{ route('books') }}">Books</a>
+            <a href="{{ route('game') }}">Game 21</a>
+        </li>
+        <li>
+            <a href="{{ route('highscores') }}">Highscores</a>
         </li>
       </ul>
     </nav>
