@@ -7,34 +7,32 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Highscores;
 
-
 class HighscoreController extends Controller
 {
-      public function view()
-      {
-          $hsDb = new Highscores();
+    public function view()
+    {
+        $hsDb = new Highscores();
 
-          $scores = $hsDb->getHighscores();
+        $scores = $hsDb->getHighscores();
 
-          return view('highscores', [
-              'title' => "Highscores",
-              'scores' => $scores
-          ]);
-      }
+        return view('highscores', [
+            'title' => "Highscores",
+            'scores' => $scores
+        ]);
+    }
 
-      public function saveHighscore(Request $request)
-      {
-          $Highscores = new Highscores();
+    public function saveHighscore(Request $request)
+    {
+        $Highscores = new Highscores();
 
-          $Highscores->name = $request->input('name');
-          $Highscores->score = $request->input('score');
+        $Highscores->name = $request->input('name');
+        $Highscores->score = $request->input('score');
 
 
-          $Highscores->save();
+        $Highscores->save();
 
-          $scores = $Highscores->getHighscores();
+        $scores = $Highscores->getHighscores();
 
-          return redirect()->route('highscores');
-      }
-
+        return redirect()->route('highscores');
+    }
 }

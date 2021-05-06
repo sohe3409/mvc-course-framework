@@ -1,0 +1,9 @@
+C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\orm\app\app\Http\Controllers\GameController.php:26	The method startGame() has a Cyclomatic Complexity of 11. The configured cyclomatic complexity threshold is 10.
+C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\orm\app\app\Http\Controllers\GameController.php:63	The method startGame uses an else expression. Else clauses are basically not necessary and you can simplify the code by not using them.
+C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\orm\app\app\Http\Controllers\HighscoreController.php:24	The variable $Highscores is not named in camelCase.
+C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\orm\app\app\Http\Controllers\HighscoreController.php:24	The variable $Highscores is not named in camelCase.
+C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\orm\app\app\Http\Controllers\HighscoreController.php:24	The variable $Highscores is not named in camelCase.
+C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\orm\app\app\Http\Controllers\HighscoreController.php:24	The variable $Highscores is not named in camelCase.
+C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\orm\app\app\Http\Controllers\HighscoreController.php:24	The variable $Highscores is not named in camelCase.
+C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\orm\app\app\Http\Controllers\HighscoreController.php:34	Avoid unused local variables such as '$scores'.
+C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\orm\app\app\Models\Books.php:24	Avoid using static access to class 'App\Models\Books' in method 'getBooks'.

@@ -9,7 +9,6 @@ use App\Models\Dice\Dice;
 use App\Models\Dice\DiceHand;
 use App\Models\Dice\GraphicalDice;
 
-
 class GameController extends Controller
 {
     public function playGame()
