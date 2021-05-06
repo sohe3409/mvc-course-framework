@@ -59,8 +59,9 @@ h2 {
     height: 130px;
 }
 
-.input {
-    border: 1px solid #000;
+.score-msg {
+    font-size: 1rem;
+    color: #6767ff;
 }
 
 .button {

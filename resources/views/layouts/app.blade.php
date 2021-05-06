@@ -23,7 +23,7 @@
             <a href="{{ route('game') }}">Game 21</a>
         </li>
         <li>
-            <a href="{{ route('highscores') }}">Highscores</a>
+            <a href="{{ route('highscores') }}">High Scores</a>
         </li>
       </ul>
     </nav>

@@ -3,7 +3,7 @@
 @section('content')
     <div class="content">
         <div class="container" style="text-align: center">
-            <h1>Game 21 Top 10 Highscores</h1>
+            <h1>Game 21 Top 10 High Scores</h1>
             <br>
             @php
                 $rank = 1
