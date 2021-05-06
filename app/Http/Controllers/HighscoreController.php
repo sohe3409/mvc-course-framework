@@ -23,15 +23,11 @@ class HighscoreController extends Controller
 
     public function saveHighscore(Request $request)
     {
-        $Highscores = new Highscores();
+        $hsDb = new Highscores();
 
-        $Highscores->name = $request->input('name');
-        $Highscores->score = $request->input('score');
-
-
-        $Highscores->save();
-
-        $scores = $Highscores->getHighscores();
+        $hsDb->name = $request->input('name');
+        $hsDb->score = $request->input('score');
+        $hsDb->save();
 
         return redirect()->route('highscores');
     }
