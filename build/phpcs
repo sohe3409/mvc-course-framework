@@ -1,0 +1,32 @@
+
+FILE: ...:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\ci\app\app\Http\Controllers\GameController.php
+-----------------------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+-----------------------------------------------------------------------------------------------
+ 1 | ERROR | [x] End of line character is invalid; expected "\n" but found "\r\n"
+-----------------------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+-----------------------------------------------------------------------------------------------
+
+
+FILE: C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\ci\app\config\database.php
+----------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------------------
+ 1 | ERROR | [x] End of line character is invalid; expected "\n" but found "\r\n"
+----------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------
+
+
+FILE: C:\cygwin64\home\Sofia\dbwebb-kurser\mvc\me\ci\app\routes\web.php
+----------------------------------------------------------------------------------
+FOUND 1 ERROR AFFECTING 1 LINE
+----------------------------------------------------------------------------------
+ 1 | ERROR | [x] End of line character is invalid; expected "\n" but found "\r\n"
+----------------------------------------------------------------------------------
+PHPCBF CAN FIX THE 1 MARKED SNIFF VIOLATIONS AUTOMATICALLY
+----------------------------------------------------------------------------------
+
+Time: 1.25 secs; Memory: 8MB
+
