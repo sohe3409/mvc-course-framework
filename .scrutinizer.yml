@@ -2,21 +2,19 @@ imports:
     - php
 
 filter:
-    excluded_paths: [vendor, test, build, database]
+    paths: ["app/Models/*", "app/Http/Controllers/*", "routes/web.php"]
+    excluded_paths: [vendor/*, build/*, app/Models/User.php]
 
 build:
-    project_setup:
-        override:
-            - true
     nodes:
         my-tests:
             environment:
                 php:
                     version: 7.4
-        coverage:
-            tests:
-                override:
-                    - command: make phpunit
-                      coverage:
-                          file: build/coverage.clover
-                          format: php-clover
+    tests:
+        override:
+            -
+                command: "make phpunit"
+                coverage:
+                    file: "build/coverage.clover"
+                    format: "php-clover"
