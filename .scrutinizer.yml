@@ -23,7 +23,7 @@ build:
                     - php-scrutinizer-run
     tests:
         before:
-            - cp .env.scrutinizer .env
+            - cp .env
             - php artisan key:generate
         override:
             -
