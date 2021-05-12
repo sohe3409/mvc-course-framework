@@ -22,6 +22,9 @@ build:
                 override:
                     - php-scrutinizer-run
     tests:
+        before:
+            - cp .env.scrutinizer .env
+            - php artisan key:generate
         override:
             -
                 command: "make phpunit"
